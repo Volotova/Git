@@ -1,0 +1,10 @@
+---
+id: splitter_tkziw
+name: Разветвление
+position:
+  x: 391
+  y: 172
+next-step: null
+parameters:
+  next-steps:
+  - agent_ufqrh

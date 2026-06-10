@@ -1,0 +1,9 @@
+---
+id: collector_dvkdu
+name: Слияние
+position:
+  x: 1084
+  y: 251
+next-step: function_reactions_sendtext_ovvxl
+parameters:
+  mode: AWAIT_ALL

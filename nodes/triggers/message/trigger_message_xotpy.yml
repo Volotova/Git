@@ -1,0 +1,9 @@
+---
+id: trigger_message_xotpy
+name: Сообщение
+position:
+  x: 72
+  y: 164
+next-step: splitter_tkziw
+parameters:
+  placeholder: null

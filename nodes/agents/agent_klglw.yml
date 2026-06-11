@@ -2,11 +2,11 @@
 id: agent_klglw
 name: Умножение
 position:
-  x: 731
-  y: 333
-next-step: collector_dvkdu
+  x: 860
+  y: 117
+next-step: null
 parameters:
-  llm-model-key: 1000001-open_ai_gpt41-fik
+  llm-model-key: 1000001-open_ai_gpt41-vjv
   llm-model-settings:
     max-tokens: 4000
     temperature: 0.6
@@ -15,8 +15,8 @@ parameters:
     presence-penalty: 0.0
     verbose-mode: true
   system-promts:
-    role: Умнож числа
-    goal: Умнож числа
+    role: Помощник
+    goal: Помощник
     instructions: ""
     query-override: ""
   tools: []

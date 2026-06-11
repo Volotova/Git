@@ -2,11 +2,11 @@
 id: agent_ufqrh
 name: Сложение
 position:
-  x: 724
-  y: 22
-next-step: collector_dvkdu
+  x: 486
+  y: 142
+next-step: agent_klglw
 parameters:
-  llm-model-key: 1000001-open_ai_gpt41-bch
+  llm-model-key: 1000001-open_ai_gpt41-vjv
   llm-model-settings:
     max-tokens: 4000
     temperature: 0.6
@@ -15,8 +15,8 @@ parameters:
     presence-penalty: 0.0
     verbose-mode: true
   system-promts:
-    role: Сложи числа
-    goal: Сложи числа
+    role: Помощник
+    goal: Помощник
     instructions: ""
     query-override: ""
   tools: []

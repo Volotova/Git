@@ -1,12 +1,12 @@
 ---
-id: agent_ufqrh
-name: Сложение
+id: agent_ygsrf
+name: Агент
 position:
-  x: 724
-  y: 22
-next-step: collector_dvkdu
+  x: 395
+  y: 43
+next-step: null
 parameters:
-  llm-model-key: 1000001-open_ai_gpt41-bch
+  llm-model-key: 1000001-open_ai_gpt41-gnv
   llm-model-settings:
     max-tokens: 4000
     temperature: 0.6
@@ -15,8 +15,8 @@ parameters:
     presence-penalty: 0.0
     verbose-mode: true
   system-promts:
-    role: Сложи числа
-    goal: Сложи числа
+    role: s
+    goal: s
     instructions: ""
     query-override: ""
   tools: []
@@ -27,4 +27,8 @@ parameters:
   telephony-config: null
   enable-context: true
   chat-history-limit: 50
-  sequential-tool-calls-limit: 5
+  sequential-tool-calls-limit: 2
+  unique-tools-count-limit: 1
+  total-response-timeout:
+    timeout: 23
+    timeout-unit: SECOND

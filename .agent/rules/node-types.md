@@ -24,11 +24,13 @@ An LLM-powered agent node that can use tools and hand off to other agents.
  `parameters.handoff-agents` | handoffagents | no | Configuration for agent handoff (transfer to other agents) |  |
  `parameters.llm-model-key` | string | no | Key of the LLM model to use | openai-gpt4 |
  `parameters.llm-model-settings` | agentllmsettings | no | LLM generation settings (temperature, maxTokens, etc.) |  |
- `parameters.sequential-tool-calls-limit` | number | yes | Maximum number of sequential tool calls before forcing a response | 5 |
+ `parameters.sequential-tool-calls-limit` | number | yes | Maximum number of sequential tool calls before forcing a response | 10 |
  `parameters.stay-in-agent` | boolean | yes | Whether to keep conversation within this agent after tool execution |  |
  `parameters.system-promts` | agentsystempromts | no | System prompts configuration for the agent |  |
  `parameters.telephony-config` | telephonyconfig | no | Telephony-specific configuration (barge-in, fillers) |  |
  `parameters.tools` | list | no | List of tool node IDs available to this agent |  |
+ `parameters.total-response-timeout` | timeoutconfig | no | Total response timeout configuration |  |
+ `parameters.unique-tools-count-limit` | number | yes | Maximum number of unique tools that can be called by the agent | 10 |
 
 ### System Prompts
 

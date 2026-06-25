@@ -13,34 +13,84 @@ parameters:
   parameters:
     llmModelKey:
       type: LLM_MODEL
-      value: null
+      value: 1000001-open_ai_gpt41-uek
       filled-ai: false
     messages:
       type: ARRAY
       value: null
-      items: null
+      items:
+      - type: OBJECT
+        properties:
+          role:
+            type: STRING
+            value: user
+          text:
+            type: STRING
+            value: Какая погода в Бресте?
+          images:
+            type: ARRAY
+            items: []
+          toolCalls:
+            type: ARRAY
+            items: []
       filled-ai: false
     tools:
       type: ARRAY
       value: null
-      items: null
+      items: []
       filled-ai: false
     maxCompletionTokens:
       type: INTEGER
-      value: null
+      value: 1000
       filled-ai: false
     temperature:
       type: NUMBER
-      value: null
+      value: 0.6
       filled-ai: false
     topP:
       type: NUMBER
-      value: null
+      value: 0.6
       filled-ai: false
     responseFormat:
       type: OBJECT
       value: null
-      properties: null
+      properties:
+        type:
+          type: STRING
+          value: object
+        properties:
+          type: OBJECT
+          properties:
+            temperature:
+              type: OBJECT
+              properties:
+                type:
+                  type: STRING
+                  value: number
+            is_raining:
+              type: OBJECT
+              properties:
+                type:
+                  type: STRING
+                  value: boolean
+            city:
+              type: OBJECT
+              properties:
+                type:
+                  type: STRING
+                  value: string
+        required:
+          type: ARRAY
+          items:
+          - type: STRING
+            value: temperature
+          - type: STRING
+            value: is_raining
+          - type: STRING
+            value: city
+        additionalProperties:
+          type: BOOLEAN
+          value: "false"
       filled-ai: false
     chatId:
       type: STRING

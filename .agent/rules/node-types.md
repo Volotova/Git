@@ -46,6 +46,8 @@ An LLM-powered agent node that can use tools and hand off to other agents.
  `parameters.llm-model-settings.frequency-penalty` | float | yes | Frequency penalty to reduce repetition | 0.0 |
  `parameters.llm-model-settings.max-tokens` | number | no | Maximum number of tokens in LLM response | 2048 |
  `parameters.llm-model-settings.presence-penalty` | float | yes | Presence penalty to encourage topic diversity | 0.0 |
+ `parameters.llm-model-settings.structured-output-enabled` | boolean | yes | Enable structured output mode (JSON Schema response). Incompatible with stayInAgent and verboseMode. |  |
+ `parameters.llm-model-settings.structured-output-schema` | objectnode | no | JSON Schema for structured output. Required when structuredOutputEnabled is true. |  |
  `parameters.llm-model-settings.temperature` | float | yes | Sampling temperature (0.0 = deterministic, 1.0 = creative) | 0.7 |
  `parameters.llm-model-settings.top-p` | float | yes | Top-p (nucleus) sampling parameter | 1.0 |
  `parameters.llm-model-settings.verbose-mode` | boolean | yes | Whether to include verbose LLM output in logs |  |

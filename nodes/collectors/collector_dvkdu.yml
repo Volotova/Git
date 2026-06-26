@@ -1,0 +1,9 @@
+---
+id: collector_dvkdu
+name: Слияние
+position:
+  x: 1084
+  y: 187
+next-step: code_tjdkq
+parameters:
+  mode: AWAIT_ALL

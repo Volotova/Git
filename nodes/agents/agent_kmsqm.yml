@@ -14,21 +14,6 @@ parameters:
     frequency-penalty: 0.0
     presence-penalty: 0.0
     verbose-mode: false
-    structured-output-enabled: true
-    structured-output-schema:
-      type: object
-      properties:
-        temperature:
-          type: number
-        is_raining:
-          type: boolean
-        city:
-          type: string
-      required:
-      - temperature
-      - is_raining
-      - city
-      additionalProperties: false
   system-promts:
     role: Помощник
     goal: Помочт пользователю

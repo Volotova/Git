@@ -49,6 +49,8 @@ For detailed info about parameters and response, read the corresponding file.
   Schema: .agent/system-functions/Context/getRawRequest.json
 - `Context.getLastFunctionResult` — Gets the result of the previously executed function
   Schema: .agent/system-functions/Context/getLastFunctionResult.json
+- `Context.getLastStateError` — Gets the structured error of the previously failed node, routed via its error connector
+  Schema: .agent/system-functions/Context/getLastStateError.json
 - `Context.getChatHistory` — Retrieves the chat history for the current account
   Schema: .agent/system-functions/Context/getChatHistory.json
 - `Credentials.get` — Retrieves credential information by its key
@@ -93,6 +95,10 @@ For detailed info about parameters and response, read the corresponding file.
   Schema: .agent/system-functions/Dialer/getSipHeaders.json
 - `Dialer.redial` — Schedules a new series of retry attempts to dial the number. Requires startDateTime or localTimeFrom at least
   Schema: .agent/system-functions/Dialer/redial.json
+- `Dialer.transferCall` — Transfers the active phone call to another phone number. The transfer result can be retrieved using getTransferStatus after the transfer completes.
+  Schema: .agent/system-functions/Dialer/transferCall.json
+- `Dialer.getTransferStatus` — Gets the result of the last call transfer. Returns SUCCESS, FAIL, TIMEOUT, or NOT_AVAILABLE if no transfer has been made yet.
+  Schema: .agent/system-functions/Dialer/getTransferStatus.json
 - `Email.send` — Sends an email using the specified SMTP integration
   Schema: .agent/system-functions/Email/send.json
 - `Http.get` — Sends an HTTP GET request to the specified URL

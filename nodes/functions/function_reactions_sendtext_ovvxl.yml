@@ -5,6 +5,7 @@ position:
   x: 720
   y: 170
 next-step: function_llm_sendrequest_zfvnh
+next-error-step: null
 parameters:
   type: SYSTEM
   collection: Reactions

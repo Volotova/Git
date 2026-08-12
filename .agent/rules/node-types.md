@@ -9,6 +9,7 @@ All YAML files use **kebab-case** field naming (e.g. `llm-model-key`, `next-step
 ------------|------|----------|-------------|---------|
  `id` | string | yes | Unique node identifier | agent-1 |
  `name` | string | yes | Human-readable node name | Main Agent |
+ `next-error-step` | string | no | ID of the node to execute when this node fails (error fallback) |  |
  `next-step` | string | no | ID of the next node to execute after this one |  |
  `parameters` | params | yes | Node-type-specific parameters (varies by node type) |  |
  `position` | position | no | Node position on the visual canvas |  |
@@ -24,11 +25,13 @@ An LLM-powered agent node that can use tools and hand off to other agents.
  `parameters.handoff-agents` | handoffagents | no | Configuration for agent handoff (transfer to other agents) |  |
  `parameters.llm-model-key` | string | no | Key of the LLM model to use | openai-gpt4 |
  `parameters.llm-model-settings` | agentllmsettings | no | LLM generation settings (temperature, maxTokens, etc.) |  |
- `parameters.sequential-tool-calls-limit` | number | yes | Maximum number of sequential tool calls before forcing a response | 5 |
+ `parameters.sequential-tool-calls-limit` | number | yes | Maximum number of sequential tool calls before forcing a response | 10 |
  `parameters.stay-in-agent` | boolean | yes | Whether to keep conversation within this agent after tool execution |  |
  `parameters.system-promts` | agentsystempromts | no | System prompts configuration for the agent |  |
  `parameters.telephony-config` | telephonyconfig | no | Telephony-specific configuration (barge-in, fillers) |  |
  `parameters.tools` | list | no | List of tool node IDs available to this agent |  |
+ `parameters.total-response-timeout` | timeoutconfig | no | Total response timeout configuration |  |
+ `parameters.unique-tools-count-limit` | number | yes | Maximum number of unique tools that can be called by the agent | 10 |
 
 ### System Prompts
 
@@ -67,6 +70,7 @@ An LLM-powered agent node that can use tools and hand off to other agents.
  `parameters.telephony-config.enabled` | boolean | yes | Whether telephony features are enabled for this agent |  |
  `parameters.telephony-config.fillers-phrase-config` | fillersphraseconfig | no | Filler phrases configuration (spoken while waiting for LLM) |  |
  `parameters.telephony-config.llm-response-timeout-ms` | number | no | Timeout in ms to wait for LLM response before using filler |  |
+ `parameters.telephony-config.silence-reprompt-config` | silencerepromptconfig | no | Silence reprompt configuration (reaction on caller silence after an LLM reply) |  |
 
 ## Function Node (`nodes/functions/`)
 

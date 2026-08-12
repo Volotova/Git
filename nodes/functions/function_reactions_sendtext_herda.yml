@@ -5,6 +5,7 @@ position:
   x: 1401
   y: 247
 next-step: null
+next-error-step: null
 parameters:
   type: SYSTEM
   collection: Reactions

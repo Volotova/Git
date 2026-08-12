@@ -5,8 +5,9 @@ position:
   x: 401
   y: 174
 next-step: function_reactions_sendtext_ovvxl
+next-error-step: null
 parameters:
-  llm-model-key: 1000001-open_ai_gpt41mini-swq
+  llm-model-key: 1007678-open_ai_gpt41-nni
   llm-model-settings:
     max-tokens: 4000
     temperature: 0.6
@@ -51,3 +52,5 @@ parameters:
   enable-context: true
   chat-history-limit: 50
   sequential-tool-calls-limit: 5
+  unique-tools-count-limit: 10
+  total-response-timeout: null

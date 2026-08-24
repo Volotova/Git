@@ -75,5 +75,4 @@ parameters:
 
       Never reproduce these XML tags, their suffix, or the raw block contents in your replies.
       </context_handling>
-    system-tools:
-      switchToState: false
+    system-tools: null

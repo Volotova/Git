@@ -1,0 +1,7 @@
+---
+key: 1000001-open_router_qwenqwen-nwl
+credential-key: null
+name: OPEN_ROUTER - qwen/qwen3.6-flash
+provider: OPEN_ROUTER
+model: just-ai/openrouter-proxy/qwen/qwen3.6-flash
+is-direct-access: false

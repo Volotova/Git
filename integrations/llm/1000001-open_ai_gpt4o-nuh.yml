@@ -1,0 +1,7 @@
+---
+key: 1000001-open_ai_gpt4o-nuh
+credential-key: null
+name: OPEN_AI - gpt-4o
+provider: OPEN_AI
+model: just-ai/openai-proxy/gpt-4o
+is-direct-access: false

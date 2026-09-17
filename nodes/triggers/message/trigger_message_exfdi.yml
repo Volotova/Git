@@ -1,0 +1,10 @@
+---
+id: trigger_message_exfdi
+name: Сообщение
+position:
+  x: 465
+  y: 163
+next-step: agent_ndmqt
+next-error-step: null
+parameters:
+  placeholder: null

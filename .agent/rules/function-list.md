@@ -192,4 +192,6 @@ For detailed info about parameters and response, read the corresponding file.
   Directory: functions/fromGit/gitFunc/
 - `CollectionA.gitFunc` — gitFunc
   Directory: functions/CollectionA/gitFunc/
+- `CollectionB.gitFunc` — gitFunc
+  Directory: functions/CollectionB/gitFunc/
 

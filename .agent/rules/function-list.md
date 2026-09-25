@@ -188,8 +188,8 @@ For detailed info about parameters and response, read the corresponding file.
 
 ## User Functions
 
-- `fromGit.gitFunc` — gitFunc
-  Directory: functions/fromGit/gitFunc/
 - `CollectionA.gitFunc` — gitFunc
   Directory: functions/CollectionA/gitFunc/
+- `fromGit.gitFunc` — gitFunc
+  Directory: functions/fromGit/gitFunc/
 

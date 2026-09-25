@@ -16,6 +16,6 @@ parameters:
   batch-size: null
   condition: null
   max-iterations-count: null
-  loop-step: code_rynto
+  loop-step: ""
   cycle-timeout-sec: null
   iteration-timeout-sec: null

@@ -24,6 +24,7 @@ parameters:
     query-override: ""
   tools:
   - function_dialer_getabonenttimezone_ffsva
+  - function_reactions_sendaudio_sqfgw
   handoff-agents:
     allowed-any: false
     allowed-agent-node-ids: []

@@ -1,0 +1,25 @@
+---
+id: function_asr_recognize_rnjsz
+name: Asr.recognize
+position:
+  x: 833
+  y: 406
+next-step: null
+next-error-step: null
+parameters:
+  type: SYSTEM
+  collection: Asr
+  function: recognize
+  is-tool: true
+  parameters:
+    asrIntegrationKey:
+      type: STRING
+      value: null
+      filled-ai: true
+    audioUrl:
+      type: STRING
+      value: null
+      filled-ai: true
+  context-config: null
+  hitl-tool-config: null
+  custom-headers: null

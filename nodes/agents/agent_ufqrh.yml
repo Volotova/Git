@@ -5,8 +5,9 @@ position:
   x: 486
   y: 142
 next-step: agent_klglw
+next-error-step: null
 parameters:
-  llm-model-key: 1000001-open_ai_gpt41-vjv
+  llm-model-key: 1000001-open_ai_gpt41-osf
   llm-model-settings:
     max-tokens: 4000
     temperature: 0.6
@@ -14,6 +15,8 @@ parameters:
     frequency-penalty: 0.0
     presence-penalty: 0.0
     verbose-mode: true
+    structured-output-enabled: false
+    structured-output-schema: null
   system-promts:
     role: Помощник
     goal: Помощник
@@ -28,3 +31,6 @@ parameters:
   enable-context: true
   chat-history-limit: 50
   sequential-tool-calls-limit: 5
+  unique-tools-count-limit: 10
+  total-response-timeout: null
+  prompt-expert-mode: null

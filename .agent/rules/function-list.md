@@ -190,4 +190,6 @@ For detailed info about parameters and response, read the corresponding file.
 
 - `fromGit.gitFunc` — gitFunc
   Directory: functions/fromGit/gitFunc/
+- `CollectionA.gitFunc` — gitFunc
+  Directory: functions/CollectionA/gitFunc/
 

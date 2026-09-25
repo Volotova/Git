@@ -22,8 +22,7 @@ parameters:
     goal: Помочь
     instructions: ""
     query-override: ""
-  tools:
-  - function_asr_recognize_ybbso
+  tools: []
   handoff-agents:
     allowed-any: false
     allowed-agent-node-ids: []

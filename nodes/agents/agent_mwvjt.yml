@@ -22,8 +22,7 @@ parameters:
     goal: Помочь
     instructions: ""
     query-override: ""
-  tools:
-  - function_reactions_sendaudio_btekp
+  tools: []
   handoff-agents:
     allowed-any: false
     allowed-agent-node-ids: []

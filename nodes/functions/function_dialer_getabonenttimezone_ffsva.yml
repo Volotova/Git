@@ -2,8 +2,8 @@
 id: function_dialer_getabonenttimezone_ffsva
 name: Dialer.getAbonentTimezone
 position:
-  x: 730
-  y: 353
+  x: 866
+  y: 328
 next-step: null
 next-error-step: null
 parameters:

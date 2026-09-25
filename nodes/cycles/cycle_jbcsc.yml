@@ -1,0 +1,21 @@
+---
+id: cycle_jbcsc
+name: Цикл
+position:
+  x: 1246
+  y: 113
+next-step: function_credentials_get_omtrd
+next-error-step: null
+parameters:
+  mode: FOR
+  start: 1
+  step: 1
+  condition-value: 10
+  condition-operator: LOWER
+  array-expression: null
+  batch-size: null
+  condition: null
+  max-iterations-count: null
+  loop-step: code_rynto
+  cycle-timeout-sec: null
+  iteration-timeout-sec: null

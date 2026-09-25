@@ -5,8 +5,9 @@ position:
   x: 395
   y: 43
 next-step: null
+next-error-step: null
 parameters:
-  llm-model-key: 1000001-open_ai_gpt41-top
+  llm-model-key: null
   llm-model-settings:
     max-tokens: 4000
     temperature: 0.6
@@ -14,12 +15,15 @@ parameters:
     frequency-penalty: 0.0
     presence-penalty: 0.0
     verbose-mode: true
+    structured-output-enabled: false
+    structured-output-schema: null
   system-promts:
     role: s
     goal: s
     instructions: ""
     query-override: ""
-  tools: []
+  tools:
+  - function_asr_recognize_durfy
   handoff-agents:
     allowed-any: false
     allowed-agent-node-ids: []
@@ -32,3 +36,4 @@ parameters:
   total-response-timeout:
     timeout: 20
     timeout-unit: SECOND
+  prompt-expert-mode: null

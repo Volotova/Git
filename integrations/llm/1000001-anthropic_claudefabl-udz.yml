@@ -1,0 +1,7 @@
+---
+key: 1000001-anthropic_claudefabl-udz
+credential-key: null
+name: ANTHROPIC - claude-fable-5
+provider: ANTHROPIC
+model: just-ai/anthropic-claude/claude-fable-5
+is-direct-access: false

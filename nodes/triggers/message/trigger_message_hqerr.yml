@@ -1,0 +1,10 @@
+---
+id: trigger_message_hqerr
+name: Сообщение
+position:
+  x: 486
+  y: 184
+next-step: agent_mwvjt
+next-error-step: null
+parameters:
+  placeholder: null

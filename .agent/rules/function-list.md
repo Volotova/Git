@@ -190,6 +190,10 @@ For detailed info about parameters and response, read the corresponding file.
 
 - `TestColl.TestFunc` — TestFunc
   Directory: functions/TestColl/TestFunc/
+- `TestColl.PP` — PP
+  Directory: functions/TestColl/PP/
 - `TestColl1.TestFunc` — TestFunc
   Directory: functions/TestColl1/TestFunc/
+- `TestColl1.PP` — PP
+  Directory: functions/TestColl1/PP/
 

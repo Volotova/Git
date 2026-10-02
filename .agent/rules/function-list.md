@@ -186,3 +186,10 @@ For detailed info about parameters and response, read the corresponding file.
 - `Log.error` — Logs an error message
   Schema: .agent/system-functions/Log/error.json
 
+## User Functions
+
+- `TestColl.TestFunc` — TestFunc
+  Directory: functions/TestColl/TestFunc/
+- `TestColl1.TestFunc` — TestFunc
+  Directory: functions/TestColl1/TestFunc/
+

@@ -1,0 +1,7 @@
+---
+id: TestFunc
+name: TestFunc
+description: TestFunc
+response-description: TestFunc
+parameters: []
+language: JAVASCRIPT

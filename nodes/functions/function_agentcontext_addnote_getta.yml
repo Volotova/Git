@@ -1,0 +1,26 @@
+---
+id: function_agentcontext_addnote_getta
+name: AgentContext.addNote
+position:
+  x: 1169
+  y: 160
+next-step: null
+next-error-step: null
+parameters:
+  type: SYSTEM
+  collection: AgentContext
+  function: addNote
+  is-tool: false
+  parameters:
+    text:
+      type: STRING
+      value: Just AI
+      filled-ai: false
+    agentIds:
+      type: ARRAY
+      value: null
+      items: []
+      filled-ai: false
+  context-config: null
+  hitl-tool-config: null
+  custom-headers: null

@@ -1,0 +1,10 @@
+---
+id: trigger_message_wgrdf
+name: Сообщение
+position:
+  x: 362
+  y: 152
+next-step: agent_phgww
+next-error-step: null
+parameters:
+  placeholder: null

@@ -2,8 +2,8 @@
 id: agent_phgww
 name: Агент
 position:
-  x: 683
-  y: 81
+  x: 699
+  y: 71
 next-step: null
 next-error-step: null
 parameters:

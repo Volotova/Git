@@ -1,0 +1,35 @@
+---
+id: function_reactions_sendtext_zcjpz
+name: Reactions.sendText
+position:
+  x: 731
+  y: 379
+next-step: null
+next-error-step: null
+parameters:
+  type: SYSTEM
+  collection: Reactions
+  function: sendText
+  is-tool: true
+  parameters:
+    text:
+      type: STRING
+      value: null
+      filled-ai: true
+  context-config: null
+  hitl-tool-config:
+    enabled: true
+    approval-question: Да дА?
+    recognition-mode: DETERMINISTIC
+    deterministic:
+      match-type: EXACT
+      approve-patterns:
+      - Да
+      decline-patterns:
+      - Нет
+      clarification-question: ТОчно?
+      max-clarification-attempts: 5
+      on-attempts-exhausted: SWITCH_TO_STATE
+      escalation-state-id: trigger_message_nrmvk
+      escalation-response-text: Сначала
+  custom-headers: null

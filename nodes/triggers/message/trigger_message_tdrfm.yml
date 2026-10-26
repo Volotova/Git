@@ -1,0 +1,10 @@
+---
+id: trigger_message_tdrfm
+name: Block_Base
+position:
+  x: 471
+  y: 161
+next-step: agent_yptfh
+next-error-step: null
+parameters:
+  placeholder: null

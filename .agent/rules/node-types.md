@@ -33,7 +33,6 @@ An LLM-powered agent node that can use tools and hand off to other agents.
  `parameters.tools` | list | no | List of tool node IDs available to this agent |  |
  `parameters.total-response-timeout` | timeoutconfig | no | Total response timeout configuration |  |
  `parameters.unique-tools-count-limit` | number | yes | Maximum number of unique tools that can be called by the agent | 10 |
- `parameters.use-dynamic-tools` | boolean | yes | Whether to read dynamic tool descriptors from the DynamicTools session variable on every LLM iteration |  |
 
 ### System Prompts
 
@@ -72,7 +71,6 @@ An LLM-powered agent node that can use tools and hand off to other agents.
  `parameters.telephony-config.enabled` | boolean | yes | Whether telephony features are enabled for this agent |  |
  `parameters.telephony-config.fillers-phrase-config` | fillersphraseconfig | no | Filler phrases configuration (spoken while waiting for LLM) |  |
  `parameters.telephony-config.llm-response-timeout-ms` | number | no | Timeout in ms to wait for LLM response before using filler |  |
- `parameters.telephony-config.silence-reprompt-config` | silencerepromptconfig | no | Silence reprompt configuration (reaction on caller silence after an LLM reply) |  |
 
 ## Function Node (`nodes/functions/`)
 

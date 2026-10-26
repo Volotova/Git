@@ -1,9 +1,9 @@
 ---
 id: agent_yptfh
-name: Agent_Conflict_2
+name: Agent_Conflict
 position:
-  x: 819
-  y: 161
+  x: 741
+  y: 254
 next-step: null
 next-error-step: null
 parameters:

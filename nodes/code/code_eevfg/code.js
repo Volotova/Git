@@ -1,2 +1,2 @@
 Reactions.sendText({"text":"Just AI"});
-const modelKey = "1000001-open_ai_gpt41-vmi";
+const modelKey = "1000001-anthropic_claudesonn-bvl";

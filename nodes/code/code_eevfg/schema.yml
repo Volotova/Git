@@ -1,0 +1,10 @@
+---
+id: code_eevfg
+name: Код
+position:
+  x: 1030
+  y: 187
+next-step: null
+next-error-step: null
+parameters:
+  language: JAVASCRIPT

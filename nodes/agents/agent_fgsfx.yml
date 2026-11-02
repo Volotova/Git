@@ -20,7 +20,7 @@ parameters:
   system-promts:
     role: Помощник
     goal: Помочь
-    instructions: ""
+    instructions: Отвечай капсом
     query-override: ""
   tools: []
   handoff-agents:

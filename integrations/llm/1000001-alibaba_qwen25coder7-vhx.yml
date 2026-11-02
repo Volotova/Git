@@ -1,7 +1,8 @@
 ---
-key: 1000001-alibaba_qwen25coder7-fhq
+key: 1000001-alibaba_qwen25coder7-vhx
 credential-key: null
 name: ALIBABA - Qwen2.5-Coder-7B-Instruct-AWQ
 provider: ALIBABA
 model: just-ai/alibaba-qwen2-5-coder-7b-instruct-awq/Qwen/Qwen2.5-Coder-7B-Instruct-AWQ
 is-direct-access: false
+origin-key: 1000001-alibaba_qwen25coder7-fhq

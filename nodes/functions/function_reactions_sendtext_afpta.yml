@@ -4,7 +4,7 @@ name: Reactions.sendText
 position:
   x: 793
   y: 148
-next-step: agent_jbajl
+next-step: null
 next-error-step: null
 parameters:
   type: SYSTEM
@@ -14,7 +14,7 @@ parameters:
   parameters:
     text:
       type: STRING
-      value: null
+      value: Just AI
       filled-ai: false
   context-config: null
   hitl-tool-config: null

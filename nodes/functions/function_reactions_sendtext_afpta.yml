@@ -4,7 +4,7 @@ name: Reactions.sendText
 position:
   x: 793
   y: 148
-next-step: null
+next-step: agent_jbajl
 next-error-step: null
 parameters:
   type: SYSTEM

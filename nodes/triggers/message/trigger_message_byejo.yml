@@ -4,7 +4,7 @@ name: Сообщение
 position:
   x: 488
   y: 156
-next-step: function_reactions_sendtext_afpta
+next-step: null
 next-error-step: null
 parameters:
   placeholder: null

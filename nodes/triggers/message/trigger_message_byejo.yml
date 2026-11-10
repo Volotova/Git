@@ -4,7 +4,7 @@ name: Сообщение
 position:
   x: 488
   y: 156
-next-step: null
+next-step: agent_jbajl
 next-error-step: null
 parameters:
   placeholder: null

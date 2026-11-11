@@ -1,13 +1,13 @@
 ---
 id: agent_jbajl
-name: Агент измена
+name: Агент
 position:
   x: 916
   y: 83
 next-step: null
 next-error-step: null
 parameters:
-  llm-model-key: 1000210800-open_ai_gpt41-vny
+  llm-model-key: 1000210800-open_ai_gpt41-yzg
   llm-model-settings:
     max-tokens: 4000
     temperature: 0.6
@@ -24,7 +24,6 @@ parameters:
     query-override: ""
   tools:
   - function_testcollpy_testfuncpy_hqsfj
-  - function_testcolljs_testfuncjs_zvjzf
   handoff-agents:
     allowed-any: false
     allowed-agent-node-ids: []

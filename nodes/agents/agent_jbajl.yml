@@ -2,12 +2,12 @@
 id: agent_jbajl
 name: Агент
 position:
-  x: 901
-  y: 121
+  x: 837
+  y: 58
 next-step: null
 next-error-step: null
 parameters:
-  llm-model-key: 1000001-open_ai_gpt41-oxl
+  llm-model-key: 1000001-open_ai_gpt41-acv
   llm-model-settings:
     max-tokens: 4000
     temperature: 0.6

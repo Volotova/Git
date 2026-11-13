@@ -9,7 +9,7 @@
       },
       "messages" : {
         "type" : "array",
-        "description" : "Conversation sent to the model, oldest message first",
+        "description" : "Array of message objects with role and content",
         "items" : {
           "type" : "object",
           "description" : "",
@@ -20,26 +20,26 @@
             },
             "text" : {
               "type" : "string",
-              "description" : "Message text"
+              "description" : "Text content"
             },
             "images" : {
               "type" : "array",
-              "description" : "Images attached to the message",
+              "description" : "Images content",
               "items" : {
                 "type" : "object",
                 "description" : "",
                 "properties" : {
                   "url" : {
                     "type" : "string",
-                    "description" : "Image URL"
+                    "description" : ""
                   },
                   "description" : {
                     "type" : "string",
-                    "description" : "What to pay attention to in the image"
+                    "description" : ""
                   },
                   "mimeType" : {
                     "type" : "string",
-                    "description" : "Image mime type, needed by Gemini only"
+                    "description" : ""
                   }
                 },
                 "required" : [ "url" ]
@@ -47,18 +47,18 @@
             },
             "toolCalls" : {
               "type" : "array",
-              "description" : "Tool calls the model asked for in its previous reply. Fill in only when you continue a tool-calling loop: return them together with that assistant message. Leave empty for a plain request",
+              "description" : "Optional tool calls made by this message",
               "items" : {
                 "type" : "object",
                 "description" : "",
                 "properties" : {
                   "id" : {
                     "type" : "string",
-                    "description" : "Tool call identifier from the model reply"
+                    "description" : ""
                   },
                   "name" : {
                     "type" : "string",
-                    "description" : "Name of the tool the model asked to call"
+                    "description" : ""
                   },
                   "arguments" : {
                     "type" : "object",
@@ -69,10 +69,6 @@
                 },
                 "required" : [ ]
               }
-            },
-            "toolCallId" : {
-              "type" : "string",
-              "description" : "Identifier of the tool call this message answers. Filled in for messages with role tool"
             }
           },
           "required" : [ "role" ]
@@ -80,18 +76,18 @@
       },
       "tools" : {
         "type" : "array",
-        "description" : "Tools you offer the model. Needed only for a manual tool-calling loop: instead of text the model may answer with tool calls, and the scenario runs the tool itself and sends the result back with role tool. Leave empty for a plain request",
+        "description" : "Available tools for the LLM to use",
         "items" : {
           "type" : "object",
           "description" : "",
           "properties" : {
             "name" : {
               "type" : "string",
-              "description" : "Tool name the model refers to"
+              "description" : "Tool name"
             },
             "description" : {
               "type" : "string",
-              "description" : "What the tool does — the model chooses the tool by this text"
+              "description" : "Tool description"
             },
             "parameters" : {
               "type" : "object",
@@ -117,7 +113,7 @@
       },
       "responseFormat" : {
         "type" : "object",
-        "description" : "Optional. JSON Schema of a structured answer. Without it the model answers with plain text in the text field",
+        "description" : "JSON Schema for the response format",
         "properties" : { },
         "required" : [ ]
       },

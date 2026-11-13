@@ -37,7 +37,7 @@ Integrations are stored in `integrations/<type>/` directories. Each integration 
  `custom-url` | string | no | Custom URL for direct access LLM model |  |
  `is-direct-access` | boolean | yes | Whether this is a direct access (custom) LLM model |  |
  `key` | string | yes | Unique integration key | openai-gpt4 |
- `model` | string | no | Model identifier; may be absent for direct access LLM serving a single model | gpt-4 |
+ `model` | string | yes | Model identifier | gpt-4 |
  `name` | string | yes | Human-readable integration name |  |
  `provider` | string | yes | LLM provider name | OpenAI |
 

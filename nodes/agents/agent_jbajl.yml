@@ -2,12 +2,12 @@
 id: agent_jbajl
 name: Агент
 position:
-  x: 952
-  y: -7
+  x: 901
+  y: 121
 next-step: null
 next-error-step: null
 parameters:
-  llm-model-key: 1000001-open_ai_gpt41-hvs
+  llm-model-key: 1000001-open_ai_gpt41-oxl
   llm-model-settings:
     max-tokens: 4000
     temperature: 0.6
@@ -22,15 +22,13 @@ parameters:
     goal: Помочь
     instructions: ""
     query-override: ""
-  tools:
-  - function_testcollpy_testfuncpy_hqsfj
+  tools: []
   handoff-agents:
     allowed-any: false
     allowed-agent-node-ids: []
   stay-in-agent: false
   telephony-config: null
   enable-context: true
-  use-dynamic-tools: false
   chat-history-limit: 50
   sequential-tool-calls-limit: 10
   unique-tools-count-limit: 10

@@ -2,8 +2,8 @@
 id: agent_jbajl
 name: Агент
 position:
-  x: 837
-  y: 58
+  x: 826
+  y: 131
 next-step: null
 next-error-step: null
 parameters:

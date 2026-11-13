@@ -33,6 +33,7 @@ An LLM-powered agent node that can use tools and hand off to other agents.
  `parameters.tools` | list | no | List of tool node IDs available to this agent |  |
  `parameters.total-response-timeout` | timeoutconfig | no | Total response timeout configuration |  |
  `parameters.unique-tools-count-limit` | number | yes | Maximum number of unique tools that can be called by the agent | 10 |
+ `parameters.use-dynamic-tools` | boolean | yes | Whether to read dynamic tool descriptors from the DynamicTools session variable on every LLM iteration |  |
 
 ### System Prompts
 
@@ -71,6 +72,7 @@ An LLM-powered agent node that can use tools and hand off to other agents.
  `parameters.telephony-config.enabled` | boolean | yes | Whether telephony features are enabled for this agent |  |
  `parameters.telephony-config.fillers-phrase-config` | fillersphraseconfig | no | Filler phrases configuration (spoken while waiting for LLM) |  |
  `parameters.telephony-config.llm-response-timeout-ms` | number | no | Timeout in ms to wait for LLM response before using filler |  |
+ `parameters.telephony-config.silence-reprompt-config` | silencerepromptconfig | no | Silence reprompt configuration (reaction on caller silence after an LLM reply) |  |
 
 ## Function Node (`nodes/functions/`)
 
@@ -85,6 +87,7 @@ Executes a user-defined or system function.
  `parameters.hitl-tool-config` | hitltoolconfig | no | Human-in-the-loop tool confirmation configuration |  |
  `parameters.is-tool` | boolean | yes | Whether this function is exposed as a tool for LLM agent |  |
  `parameters.parameters` | map | no | Map of parameter name to parameter value with type info |  |
+ `parameters.resilience-config` | functionresilienceconfig | no | Timeout, retry count and fallback applied when the function call fails |  |
  `parameters.type` | string | yes | Function source type: USER, SYSTEM oк MCP | USER |
 
 Each entry in `parameters.parameters` map is a parameter name mapped to an object with `type`, `value`, and `filled-ai` fields.

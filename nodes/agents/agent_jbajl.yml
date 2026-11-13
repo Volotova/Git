@@ -2,12 +2,12 @@
 id: agent_jbajl
 name: Агент
 position:
-  x: 826
-  y: 131
+  x: 842
+  y: 121
 next-step: null
 next-error-step: null
 parameters:
-  llm-model-key: 1000001-open_ai_gpt41-acv
+  llm-model-key: 1000001-open_ai_gpt41-hvs
   llm-model-settings:
     max-tokens: 4000
     temperature: 0.6
@@ -29,6 +29,7 @@ parameters:
   stay-in-agent: false
   telephony-config: null
   enable-context: true
+  use-dynamic-tools: false
   chat-history-limit: 50
   sequential-tool-calls-limit: 10
   unique-tools-count-limit: 10

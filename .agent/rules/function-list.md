@@ -19,7 +19,7 @@ For detailed info about parameters and response, read the corresponding file.
   Schema: .agent/system-functions/AgentContext/deleteValue.json
 - `AgentContext.clearContext` — Clears the entire context (both text and KV)
   Schema: .agent/system-functions/AgentContext/clearContext.json
-- `Asr.recognize` — Recognizes audio content using the specified ASR integration
+- `Asr.recognize` — Recognizes audio content using the specified ASR integration. Not needed in a voice channel: the caller's speech there is recognized automatically with the channel's ASR settings
   Schema: .agent/system-functions/Asr/recognize.json
 - `Context.getAccountId` — Gets the account ID from the current request's bot ID
   Schema: .agent/system-functions/Context/getAccountId.json
@@ -69,6 +69,10 @@ For detailed info about parameters and response, read the corresponding file.
   Schema: .agent/system-functions/Db/deleteByFilters.json
 - `Db.updateByFilters` — Updates documents matching the filter
   Schema: .agent/system-functions/Db/updateByFilters.json
+- `Dialer.transferCall` — Transfers the active phone call to another phone number. The transfer result can be retrieved using getTransferStatus after the transfer completes.
+  Schema: .agent/system-functions/Dialer/transferCall.json
+- `Dialer.getTransferStatus` — Gets the result of the last call transfer. Returns SUCCESS, FAIL, TIMEOUT, or NOT_AVAILABLE if no transfer has been made yet.
+  Schema: .agent/system-functions/Dialer/getTransferStatus.json
 - `Dialer.getCaller` — Returns the phone number of the client. Returns null if rawRequest is not available
   Schema: .agent/system-functions/Dialer/getCaller.json
 - `Dialer.hangUp` — Terminates the current call. On telephony channels sends a hangup reply, on other channels sends an optional text message
@@ -135,6 +139,8 @@ For detailed info about parameters and response, read the corresponding file.
   Schema: .agent/system-functions/ProjectRouter/backToOriginalProject.json
 - `ProjectRouter.getCustomData` — Gets the custom data that was passed during the last context switch to this bot
   Schema: .agent/system-functions/ProjectRouter/getCustomData.json
+- `ProjectRouter.getSwitchInfo` — Gets the last context switch (or context return) entry: type, fromBot, fromProduct, toBot, toProduct, toState and customData. Project types (fromProduct/toProduct) are JAICP, AGENT or AIMYLOGIC
+  Schema: .agent/system-functions/ProjectRouter/getSwitchInfo.json
 - `Rag.retrieveChunks` — Retrieves relevant chunks from a RAG integration based on a query
   Schema: .agent/system-functions/Rag/retrieveChunks.json
 - `Rag.generateAnswer` — Generates an answer using a RAG integration based on a query
@@ -179,7 +185,7 @@ For detailed info about parameters and response, read the corresponding file.
   Schema: .agent/system-functions/Telegram/sendVoice.json
 - `Telegram.sendButtons` — Sends a message with inline keyboard buttons to a Telegram chat
   Schema: .agent/system-functions/Telegram/sendButtons.json
-- `Tts.synthesize` — Converts text to speech using the specified TTS integration and returns an audio URL
+- `Tts.synthesize` — Converts text to speech using the specified TTS integration and returns an audio URL. Not needed in a voice channel: the bot's replies there are synthesized automatically with the channel's TTS settings
   Schema: .agent/system-functions/Tts/synthesize.json
 
 ## User Functions

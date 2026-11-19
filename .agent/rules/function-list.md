@@ -190,8 +190,8 @@ For detailed info about parameters and response, read the corresponding file.
 
 ## User Functions
 
-- `TestCollJS.TestFuncJS` — TestFuncJS
-  Directory: functions/TestCollJS/TestFuncJS/
+- `TestCollJS._.._evil` — _.._evil
+  Directory: functions/TestCollJS/_.._evil/
 - `TestCollPy.TestFuncPy` — TestFuncPy
   Directory: functions/TestCollPy/TestFuncPy/
 

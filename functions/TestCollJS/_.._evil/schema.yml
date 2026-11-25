@@ -1,7 +1,7 @@
 ---
-id: ../evil
-name: ../evil
-description: ../evil
+id: TestFuncJS
+name: TestFuncJS
+description: TestFuncJS
 response-description: TestFuncJS
 parameters: []
 language: JAVASCRIPT

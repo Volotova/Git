@@ -10,6 +10,8 @@ Each function directory contains:
 | YAML Field | Type | Required | Description | Example |
 ------------|------|----------|-------------|---------|
  `description` | string | yes | Function description for LLM tool calling |  |
+ `from-account` | boolean | no | True for a hook that came from the account hooks collection; restored hooks are linked back to the account hook with the same name and type |  |
+ `hook-type` | string | no | Agent hook type (BEFORE_LLM_REQUEST, AFTER_LLM_RESPONSE, AFTER_TOOL_CALL); only for functions of a hooks collection |  |
  `id` | string | yes | Unique function identifier |  |
  `language` | string | yes | Function language |  |
  `name` | string | yes | Function name | sendEmail |

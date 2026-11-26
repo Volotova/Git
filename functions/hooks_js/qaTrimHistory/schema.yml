@@ -1,0 +1,63 @@
+---
+id: qaTrimHistory
+name: qaTrimHistory
+description: "QA: оставляет последние 2 сообщения истории"
+response-description: null
+parameters:
+- name: messages
+  type: ARRAY
+  required: true
+  description: "Messages about to be sent to the LLM, the full system prompt included"
+  properties: null
+  items:
+    name: ""
+    type: OBJECT
+    required: false
+    description: "Message: {role, text, images, toolCalls, toolCallId}"
+    properties:
+    - name: role
+      type: STRING
+      required: true
+      description: "system, user, assistant or tool"
+      properties: null
+      items: null
+    - name: text
+      type: STRING
+      required: false
+      description: Text content
+      properties: null
+      items: null
+    - name: toolCallId
+      type: STRING
+      required: false
+      description: Tool call id of a tool message
+      properties: null
+      items: null
+    items: null
+- name: agent
+  type: OBJECT
+  required: false
+  description: "Agent that calls the hook: {id, name}"
+  properties:
+  - name: id
+    type: STRING
+    required: false
+    description: Agent node id
+    properties: null
+    items: null
+  - name: name
+    type: STRING
+    required: false
+    description: Agent node name
+    properties: null
+    items: null
+  items: null
+- name: iteration
+  type: INTEGER
+  required: false
+  description: "Iteration of the agent loop within the current turn, starting at 1"
+  properties: null
+  items: null
+language: JAVASCRIPT
+hook-type: BEFORE_LLM_REQUEST
+from-account: true
